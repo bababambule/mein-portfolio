@@ -19,9 +19,6 @@ export function createHero(): HTMLElement {
         <a href="#contact" class="px-8 py-4 border-2 border-purple-600 text-purple-400 rounded-lg hover:bg-purple-600 hover:text-white transition-all">
           Kontakt
         </a>
-        <a href="https://www.github.com" class="px-8 py-4 border-2 border-purple-600 text-purple-400 rounded-lg hover:bg-purple-600 hover:text-white transition-all">
-            github
-        </a>
       </div>
     </div>
     `;
