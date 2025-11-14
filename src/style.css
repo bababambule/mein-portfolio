@@ -5,7 +5,7 @@
 @layer base {
   body {
     @apply bg-amber-50 text-base text-slate-800;
-    font-family: "Pacifico", system-ui, -apple-system, sans-serif;
+    font-family: "Rubik", system-ui, -apple-system, sans-serif;
   }
 
   html {
