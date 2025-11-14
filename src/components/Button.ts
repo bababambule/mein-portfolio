@@ -22,10 +22,11 @@ export function createButton(options: ButtonOptions): HTMLButtonElement {
 
   // Base classes
   const baseClasses =
-    "px-8 py-4 rounded-lg transition-all hover:scale-105 font-semibold";
+    "px-8 py-4 rounded-md transition-all hover:scale-105 duration-300 font-semibold";
 
   const variantClasses = {
-    primary: "bg-purple-600 text-white hover:bg-purple-700",
+    primary:
+      "bg-gradient-to-t from-slate-600 to-slate-500 text-white hover:from-slate-700 hover:to-slate-500",
     secondary: "bg-slate-700 text-white hover:bg-slate-600",
     outline:
       "border-2 border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white",

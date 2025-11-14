@@ -19,5 +19,8 @@
     "typescript": "~5.9.3",
     "vite": "^7.2.2",
     "vite-plugin-html": "^3.2.2"
+  },
+  "dependencies": {
+    "solar-icon-set": "^2.0.1"
   }
 }
