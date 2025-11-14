@@ -1,4 +1,4 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const n of t)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function s(t){const n={};return t.integrity&&(n.integrity=t.integrity),t.referrerPolicy&&(n.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?n.credentials="include":t.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function r(t){if(t.ep)return;t.ep=!0;const n=s(t);fetch(t.href,n)}})();function c(){const e=document.createElement("nav");return e.className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800",e.innerHTML=`
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))n(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const i of o.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&n(i)}).observe(document,{childList:!0,subtree:!0});function s(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function n(t){if(t.ep)return;t.ep=!0;const o=s(t);fetch(t.href,o)}})();function d(){const e=document.createElement("nav");return e.className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800",e.innerHTML=`
     <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -71,25 +71,7 @@
       id="mobile-menu-overlay" 
       class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"
     ></div>
-  `,e}function u(){const e=document.createElement("section");return e.className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900",e.innerHTML=`
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-6xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-                Hallo, ich bin
-                <span class="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">Cristian</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-8">
-                Webdesigner & Frontend Developer
-            </p>
-            <div class="flex gap-4 justify-center">
-                <a href="#projects" class="px-8 py-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all hover:scale-105">
-          Projekte ansehen
-        </a>
-        <a href="#contact" class="px-8 py-4 border-2 border-purple-600 text-purple-400 rounded-lg hover:bg-purple-600 hover:text-white transition-all">
-          Kontakt
-        </a>
-      </div>
-    </div>
-    `,e}function p(){const e=document.createElement("section");return e.className="min-h-screen bg-slate-900 py-20 px-6",e.innerHTML=`
+  `,e}function c(){const e=document.createElement("section");return e.className="min-h-screen bg-slate-900 py-20 px-6",e.innerHTML=`
     <div class="max-w-7xl mx-auto">
       <h2 class="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
         Meine Projekte
@@ -97,14 +79,16 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Projekt Card 1 -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition-transform">
-          <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500"></div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold text-white mb-2">Projekt 1</h3>
-            <p class="text-gray-400 mb-4">Eine coole Webseite mit modernem Design</p>
-            <a href="#" class="text-purple-400 hover:text-purple-300">Mehr erfahren →</a>
+        <a href="digital-prospekt.html">
+          <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition-transform">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500"></div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-white mb-2">Projekt 1</h3>
+              <p class="text-gray-400 mb-4">Eine coole Webseite mit modernem Design</p>
+              <a href="#" class="text-purple-400 hover:text-purple-300">Mehr erfahren →</a>
+            </div>
           </div>
-        </div>
+        </a>
         
         <!-- Projekt Card 2 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition-transform">
@@ -127,7 +111,7 @@
         </div>
       </div>
     </div>
-  `,e}function d(){const e=document.createElement("div");return e.className="w-full bg-slate-800 rounded-xl p-6 @container",e.innerHTML=`
+  `,e}function a(){const e=document.createElement("div");return e.className="w-full bg-slate-800 rounded-xl p-6 @container",e.innerHTML=`
     <h3 class="text-lg @md:text-2xl @lg:text-3xl font-bold text-white mb-2">
       Responsive Karte
     </h3>
@@ -138,7 +122,7 @@
       <button class="px-4 py-2 bg-purple-600 text-white rounded">Button 1</button>
       <button class="px-4 py-2 bg-purple-600 text-white rounded">Button 2</button>
     </div>
-  `,e}function m(){const e=document.createElement("section");e.className="min-h-screen bg-slate-900 py-20 px-6",e.innerHTML=`
+  `,e}function u(){const e=document.createElement("section");e.className="min-h-screen bg-slate-900 py-20 px-6",e.innerHTML=`
     <div class="max-w-7xl mx-auto">
       <h2 class="text-4xl font-bold text-white mb-12 text-center">
         Container Queries Demo
@@ -164,4 +148,4 @@
         </div>
       </div>
     </div>
-  `;const o=e.querySelector("#narrow-container"),s=e.querySelector("#medium-container"),r=e.querySelector("#wide-container");return o&&o.appendChild(d()),s&&s.appendChild(d()),r&&r.appendChild(d()),e}function x(){const e=document.getElementById("mobile-menu-button"),o=document.getElementById("mobile-menu-close"),s=document.getElementById("mobile-menu"),r=document.getElementById("mobile-menu-overlay"),t=document.querySelectorAll(".mobile-menu-link");function n(){s?.classList.remove("translate-x-full"),r?.classList.remove("opacity-0","pointer-events-none"),document.body.style.overflow="hidden"}function i(){s?.classList.add("translate-x-full"),r?.classList.add("opacity-0","pointer-events-none"),document.body.style.overflow=""}e?.addEventListener("click",n),o?.addEventListener("click",i),r?.addEventListener("click",i),t.forEach(a=>{a.addEventListener("click",i)}),document.addEventListener("keydown",a=>{a.key==="Escape"&&i()})}const l=document.querySelector("#app");document.body.insertBefore(c(),l);l.innerHTML="";l.appendChild(u());l.appendChild(p());l.appendChild(m());x();
+  `;const r=e.querySelector("#narrow-container"),s=e.querySelector("#medium-container"),n=e.querySelector("#wide-container");return r&&r.appendChild(a()),s&&s.appendChild(a()),n&&n.appendChild(a()),e}function m(){const e=document.getElementById("mobile-menu-button"),r=document.getElementById("mobile-menu-close"),s=document.getElementById("mobile-menu"),n=document.getElementById("mobile-menu-overlay"),t=document.querySelectorAll(".mobile-menu-link");function o(){s?.classList.remove("translate-x-full"),n?.classList.remove("opacity-0","pointer-events-none"),document.body.style.overflow="hidden"}function i(){s?.classList.add("translate-x-full"),n?.classList.add("opacity-0","pointer-events-none"),document.body.style.overflow=""}e?.addEventListener("click",o),r?.addEventListener("click",i),n?.addEventListener("click",i),t.forEach(l=>{l.addEventListener("click",i)}),document.addEventListener("keydown",l=>{l.key==="Escape"&&i()})}export{c as a,u as b,d as c,m as i};
