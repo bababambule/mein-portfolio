@@ -1,1 +1,0 @@
-import{c as a,a as r,b as t,i as o}from"./mobileMenu-Dw6NWlhM.js";import{c as i}from"./Hero-DKI9IOT3.js";const e=document.querySelector("#app");e.className="bg-amber-600 text-base/6";document.body.insertBefore(a(),e);e.innerHTML="";e.appendChild(i());e.appendChild(r());e.appendChild(t());o();
