@@ -16,7 +16,7 @@ import { initMobileMenu } from "./utils/mobileMenu.ts";
 // setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
-app.className = "bg-amber-600 text-base/6";
+app.className = "bg-amber-50 text-base/6";
 
 // Navigation außerhalb vom app-Container, damit sie immer sichtbar ist
 document.body.insertBefore(createNavigation(), app);

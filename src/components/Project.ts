@@ -10,14 +10,16 @@ export function createProjects(): HTMLElement {
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Projekt Card 1 -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition-transform">
-          <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500"></div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold text-white mb-2">Projekt 1</h3>
-            <p class="text-gray-400 mb-4">Eine coole Webseite mit modernem Design</p>
-            <a href="#" class="text-purple-400 hover:text-purple-300">Mehr erfahren →</a>
+        <a href="digital-prospekt.html">
+          <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition-transform">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500"></div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-white mb-2">Projekt 1</h3>
+              <p class="text-gray-400 mb-4">Eine coole Webseite mit modernem Design</p>
+              <a href="#" class="text-purple-400 hover:text-purple-300">Mehr erfahren →</a>
+            </div>
           </div>
-        </div>
+        </a>
         
         <!-- Projekt Card 2 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition-transform">

@@ -1,6 +1,6 @@
 import "./style.css";
 import { createNavigation } from "./components/Navigation.ts";
-import { createHero } from "./components/Hero.ts";
+// import { createHero } from "./components/Hero.ts";
 import { createProjects } from "./components/Project.ts";
 import { createCardDemo } from "./components/CardDemo.ts";
 import { initMobileMenu } from "./utils/mobileMenu.ts";
@@ -22,7 +22,7 @@ app.className = "bg-amber-600 text-base/6";
 document.body.insertBefore(createNavigation(), app);
 
 app.innerHTML = "";
-app.appendChild(createHero());
+//app.appendChild(createHero());
 app.appendChild(createProjects());
 app.appendChild(createCardDemo());
 
