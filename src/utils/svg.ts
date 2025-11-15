@@ -19,13 +19,16 @@ export function setSvgSize(
 // Mit Tailwind-ähnlichen Namen
 export function resizeSvg(
   svgString: string,
-  size: "sm" | "md" | "lg" | "xl"
+  size: "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl" | "xxxxl"
 ): string {
   const sizes = {
     sm: 16,
     md: 24,
     lg: 32,
     xl: 48,
+    xxl: 64,
+    xxxl: 80,
+    xxxxl: 96,
   };
 
   return setSvgSize(svgString, sizes[size]);
