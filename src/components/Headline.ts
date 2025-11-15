@@ -14,7 +14,7 @@ export function CreateHeading(options: HeadingOptions): HTMLElement {
 
   const defaultClasses: Record<HeadingTypes, string> = {
     h1: "text-4xl font-black",
-    h2: "text-2xl/8 font-black",
+    h2: "text-2xl/8 font-bold",
     h3: "text-lg font-bold",
     h4: "text-base font-bold",
   };

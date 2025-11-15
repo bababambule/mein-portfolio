@@ -43,7 +43,7 @@ export function contentBlock(options: ContentBlockOptions): HTMLElement {
     slateDark: "bg-slate-600 text-slate-50",
   };
   //set the styling
-  contentBlock.className = `${baseClasses} ${variantClasses[blockVariant]} flex flex-col gap-4 pb-12`;
+  contentBlock.className = `${baseClasses} ${variantClasses[blockVariant]} flex flex-col gap-4 py-12`;
 
   //create the badge element
   const badge = createBadge({

@@ -2,27 +2,32 @@ type ButtonVariant = "primary" | "secondary" | "outline";
 
 interface ButtonOptions {
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
+  href?: string;
   variant?: ButtonVariant;
   disabled?: boolean;
   fullWidth?: boolean;
 }
 
-export function createButton(options: ButtonOptions): HTMLButtonElement {
+export function createButton(options: ButtonOptions): HTMLElement {
   const {
     text,
     onClick,
+    href,
     variant = "primary",
     disabled = false,
     fullWidth = false,
   } = options;
 
-  const button = document.createElement("button");
-  button.textContent = text;
+  const element = href
+    ? document.createElement("a")
+    : document.createElement("button");
+
+  element.textContent = text;
 
   // Base classes
   const baseClasses =
-    "px-8 py-4 rounded-md transition-all hover:scale-105 duration-300 font-semibold";
+    "px-8 py-4 rounded-md transition-all hover:scale-105 duration-300 font-semibold block";
 
   const variantClasses = {
     primary:
@@ -35,9 +40,17 @@ export function createButton(options: ButtonOptions): HTMLButtonElement {
   const widthClass = fullWidth ? "w-full" : "";
   const disabledClass = disabled ? "opacity-50 cursor-not-allowed" : "";
 
-  button.className = `${baseClasses} ${variantClasses[variant]} ${widthClass} ${disabledClass}`;
-  button.disabled = disabled;
-  button.addEventListener("click", onClick);
+  element.className = `${baseClasses} ${variantClasses[variant]} ${widthClass} ${disabledClass}`;
 
-  return button;
+  if (href) {
+    (element as HTMLAnchorElement).href = href;
+  } else if (onClick && !disabled) {
+    element.addEventListener("click", onClick);
+  }
+
+  if (disabled) {
+    element.setAttribute("disabled", "true");
+  }
+
+  return element;
 }

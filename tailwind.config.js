@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["IBM Plex Mono", "monospace"],
+      },
       animation: {
         "fade-in": "fadeIn 1.5s ease-in-out 0.3s both",
         "slide-up": "slideUp 0.8s ease-out",
