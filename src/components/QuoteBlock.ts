@@ -4,12 +4,17 @@ interface QuoteOptions {
   body: string;
   button?: boolean;
   variant?: QuoteDesign;
+  id?: string;
 }
 
 export function createQuote(options: QuoteOptions): HTMLElement {
-  const { body, button = true, variant = "slate" } = options;
+  const { body, button = true, variant = "slate", id = "" } = options;
 
   const quote = document.createElement("section");
+
+  if (id) {
+    quote.setAttribute("id", id);
+  }
 
   const sectionBaseClass = "py-10 px-12";
   const sectionDefaultClasses: Record<QuoteDesign, string> = {

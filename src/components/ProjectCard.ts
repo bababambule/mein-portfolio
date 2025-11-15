@@ -2,6 +2,7 @@ import digitalProspekt from "../assets/img/card-digital-prospekt.webp";
 
 export function ProjectCardSection(): HTMLElement {
   const projectCardSection = document.createElement("section");
+  projectCardSection.setAttribute("id", "projects");
   projectCardSection.className =
     "bg-amber-600 py-12 flex flex-col gap-24 text-amber-50";
 

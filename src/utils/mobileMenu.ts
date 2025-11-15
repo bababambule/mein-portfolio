@@ -9,12 +9,14 @@ export function initMobileMenu() {
     mobileMenu?.classList.remove("translate-x-full");
     overlay?.classList.remove("opacity-0", "pointer-events-none");
     document.body.style.overflow = "hidden"; // Verhindert Scrollen
+    mobileMenu?.setAttribute("aria", "open");
   }
 
   function closeMenu() {
     mobileMenu?.classList.add("translate-x-full");
     overlay?.classList.add("opacity-0", "pointer-events-none");
     document.body.style.overflow = ""; // Erlaubt wieder Scrollen
+    mobileMenu?.setAttribute("aria", "close");
   }
 
   // Event Listeners

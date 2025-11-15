@@ -43,6 +43,7 @@ const quote = createQuote({
   body: "Want to work with me?_",
   button: true,
   variant: "amber",
+  id: "contact",
 });
 
 const buttonSlot = aboutBlock.querySelector("#aboutButtonSlot");
