@@ -1,4 +1,4 @@
-import{l as w,a as k,c as C,i as T}from"./mobileMenu-DHhnkH_r.js";import{r as x,l as $,g as B,d as N,a as j,c as L}from"./Hero-DWqQZyFI.js";function S(e){const{text:s,variant:a="amberLight"}=e,t=document.createElement("div");t.textContent=s;const l="py-2 px-1 border-b-2 max-w-max text-xs",i={amberLight:"text-amber-50 border-amber-50",amberDark:"text-amber-400 border-amber-400",slate:"text-slate-400 border-amber-400",pill:"rounded-lg bg-slate-100 text-slate-600 border-0"};return t.className=`${l} ${i[a]}`,t}function E(e){const{text:s,type:a="h1",className:t=""}=e,l=document.createElement(a),i={h1:"text-4xl font-black",h2:"text-2xl/8 font-bold",h3:"text-lg font-bold",h4:"text-base font-bold"};return l.textContent=s,l.className=t||i[a],l}function v(e){const{blockVariant:s="amberDark",badgeText:a="",badgeVariant:t="amberLight",showBadge:l=!0,headingText:i="Headline",headingType:c="h1",body:p=""}=e,o=document.createElement("section"),r="w-full px-12",b={amberLight:"bg-amber-50 text-amber-800",amberDark:"bg-amber-600 text-amber-50",slateLight:"bg-slate-50 text-slate-800",slateDark:"bg-slate-600 text-slate-50"};o.className=`${r} ${b[s]} flex flex-col gap-4 py-12`;const g=S({text:a,variant:t}),y=E({text:i,type:c}),d=document.createElement("div");d.className="flex flex-col gap-2";const m=document.createElement("div");return m.className="",m.innerHTML=p,l&&d.appendChild(g),d.appendChild(y),o.appendChild(d),o.appendChild(m),o}const u="/assets/card-digital-prospekt-GvpxFVwl.webp";function z(){const e=document.createElement("section");e.setAttribute("id","projects"),e.className="bg-amber-600 py-12 flex flex-col gap-24 text-amber-50";const s=document.createElement("div");s.className="flex flex-col gap-0 px-6",s.innerHTML=`
+import{l as w,a as C,c as k,i as T}from"./mobileMenu-Gt8Ewzzv.js";import{r as x,l as $,g as B,d as L,c as N,a as S}from"./Hero-DWqQZyFI.js";function j(e){const{text:s,variant:a="amberLight"}=e,t=document.createElement("div");t.textContent=s;const l="py-2 px-1 border-b-2 max-w-max text-xs",i={amberLight:"text-amber-50 border-amber-50",amberDark:"text-amber-400 border-amber-400",slate:"text-slate-400 border-amber-400",pill:"rounded-lg bg-slate-100 text-slate-600 border-0"};return t.className=`${l} ${i[a]}`,t}function E(e){const{text:s,type:a="h1",className:t=""}=e,l=document.createElement(a),i={h1:"text-4xl font-black",h2:"text-2xl/8 font-bold",h3:"text-lg font-bold",h4:"text-base font-bold"};return l.textContent=s,l.className=t||i[a],l}function v(e){const{blockVariant:s="amberDark",badgeText:a="",badgeVariant:t="amberLight",showBadge:l=!0,headingText:i="Headline",headingType:c="h1",body:p=""}=e,o=document.createElement("section"),r="w-full px-12",b={amberLight:"bg-amber-50 text-amber-800",amberDark:"bg-amber-600 text-amber-50",slateLight:"bg-slate-50 text-slate-800",slateDark:"bg-slate-600 text-slate-50"};o.className=`${r} ${b[s]} flex flex-col gap-4 py-12`;const g=j({text:a,variant:t}),y=E({text:i,type:c}),d=document.createElement("div");d.className="flex flex-col gap-2";const m=document.createElement("div");return m.className="",m.innerHTML=p,l&&d.appendChild(g),d.appendChild(y),o.appendChild(d),o.appendChild(m),o}const u="/assets/card-digital-prospekt-GvpxFVwl.webp";function z(){const e=document.createElement("section");e.setAttribute("id","projects"),e.className="bg-amber-600 py-12 flex flex-col gap-24 text-amber-50";const s=document.createElement("div");s.className="flex flex-col gap-0 px-6",s.innerHTML=`
     <div class="flex gap-4  justify-between -mb-8 z-10 relative">
         <div>
             <p class="text-6xl font-black uppercase text-right drop-shadow-lg">Digi<br>tal</p>
@@ -79,7 +79,7 @@ import{l as w,a as k,c as C,i as T}from"./mobileMenu-DHhnkH_r.js";import{r as x,
   `,i.appendChild(r),i}function H(){const e=document.createElement("footer");return e.className="bg-slate-800 py-10 px-12 flex flex-col gap-8",e.innerHTML=`
     <a href="/index.html" class="flex gap-4 text-slate-50 justify-center">
         <div>${w}</div>
-        <div>${k}</div>
+        <div>${C}</div>
     </a>
     <div class="flex justify-center items-center gap-4 mt-4">
         <a href="#" class="px-3 py-3 bg-slate-600 text-slate-50 rounded ">
@@ -89,21 +89,21 @@ import{l as w,a as k,c as C,i as T}from"./mobileMenu-DHhnkH_r.js";import{r as x,
             ${x(B,"lg")}
         </a>
         <a href="#" class="px-3 py-3 bg-slate-600 text-slate-50 rounded ">
-            ${x(N,"lg")}
+            ${x(L,"lg")}
         </a>
     </div>
     <div class="text-center">
         <a href="/impressum.html" class="text-xs font-light text-slate-400">Legal Notice</a>
     </div>
-  `,e}const n=document.querySelector("#app");n.className="bg-amber-600 text-base/6";const I=v({badgeText:"Case Studies",badgeVariant:"amberLight",showBadge:!0,headingText:"Selected Projects",headingType:"h2",body:`
-    <p class="">My broad skill set and experience allows me to ship complex projects solo or in small teams - covering design, user testing, development and optimization.</p>
-  `}),h=v({blockVariant:"amberLight",showBadge:!1,headingText:"Always learning. Always building.",headingType:"h2",body:`
+  `,e}const n=document.querySelector("#app");document.body.insertBefore(k(),n);n.innerHTML="";n.appendChild(N());n.appendChild(v({badgeText:"Case Studies",badgeVariant:"amberLight",showBadge:!0,headingText:"Selected Projects",headingType:"h2",body:`
+    <p>My broad skill set and experience allows me to ship complex projects solo or in small teams - covering design, user testing, development and optimization.</p>
+  `}));n.appendChild(z());const h=v({blockVariant:"amberLight",showBadge:!1,headingText:"Always learning. Always building.",headingType:"h2",body:`
     <div class="flex flex-col gap-8">
-      <p class="">I've been designing and building <span class="font-semibold">digital products since 2014</span>. Started as a graphic designer, dove into dev during my apprenticeship, spent time in the games industry, and returned to product design in 2017.</p>
-      <p class="">Today I'm a senior product designer at orange promotion, building multi-tenant SaaS architectures and automation systems. <span class="font-semibold">My range covers design, development, low-code and analytics</span> – because the best products are built end-to-end.</p>
-      <div class="flex gap-4">
-        <p class="shrink font-semibold">I work where design meets code and I've been doing it for over a decade.</p>
-        <div id="aboutButtonSlot" class="shrink-0"></div>
+      <p>I've been designing and building <span class="font-semibold">digital products since 2014</span>. Started as a graphic designer, dove into dev during my apprenticeship, spent time in the games industry, and returned to product design in 2017.</p>
+      <p>Today I'm a senior product designer at orange promotion, building multi-tenant SaaS architectures and automation systems. <span class="font-semibold">My range covers design, development, low-code and analytics</span> – because the best products are built end-to-end.</p>
+      <div class="flex flex-wrap gap-5">
+        <p class="grow basis-1/2 font-semibold ">I work where design meets code and I've been doing it for over a decade.</p>
+        <div id="aboutButtonSlot"></div>
       </div>
     </div>
-    `}),D=M({body:"Want to work with me?_",button:!0,variant:"amber",id:"contact"}),f=h.querySelector("#aboutButtonSlot");if(f){const e=j({text:"Learn More",href:"/about.html",variant:"primary",fullWidth:!1});f.appendChild(e)}document.body.insertBefore(C(),n);n.innerHTML="";n.appendChild(L());n.appendChild(I);n.appendChild(z());n.appendChild(h);n.appendChild(D);n.appendChild(H());T();
+    `}),f=h.querySelector("#aboutButtonSlot");if(f){const e=S({text:"Learn More",href:"/about.html",variant:"primary",fullWidth:!1});f.appendChild(e)}n.appendChild(h);const D=M({body:'Want to work with me?<span class="cursorAnim">_</span>',button:!0,variant:"amber",id:"contact"});n.appendChild(D);n.appendChild(H());T();
