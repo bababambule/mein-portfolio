@@ -1,0 +1,1 @@
+import{c as a,i as r}from"./mobileMenu-rcJZh83C.js";import{c as o}from"./Hero-BkFjpYk8.js";import{c as t,a as i}from"./CardDemo-CTpwvOn1.js";const e=document.querySelector("#app");e.className="bg-amber-50 text-base/6";document.body.insertBefore(a(),e);e.innerHTML="";e.appendChild(o());e.appendChild(t());e.appendChild(i());r();
