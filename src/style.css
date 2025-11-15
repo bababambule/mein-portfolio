@@ -8,6 +8,10 @@
     font-family: "Rubik", system-ui, -apple-system, sans-serif;
   }
 
+  #app {
+    @apply bg-amber-50 text-base/6;
+  }
+
   html {
     scroll-behavior: smooth;
   }

@@ -3,7 +3,7 @@ import { resolve } from "path";
 import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig({
-  base: "/mein-portfolio/",
+  base: "/",
   plugins: [
     createHtmlPlugin({
       minify: true,
