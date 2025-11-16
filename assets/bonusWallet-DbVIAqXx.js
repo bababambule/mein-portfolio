@@ -1,0 +1,1 @@
+import{c as a,i as r}from"./mobileMenu-Dnc_SqrW.js";import{c as o}from"./Hero-Ddj9l2g4.js";import{c as t,a as i}from"./CardDemo-CTpwvOn1.js";import"./fa7-brands_dribbble-square-C3JX79Ao.js";const e=document.querySelector("#app");e.className="bg-amber-600 text-base/6";document.body.insertBefore(a(),e);e.innerHTML="";e.appendChild(o());e.appendChild(t());e.appendChild(i());r();
