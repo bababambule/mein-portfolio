@@ -1,4 +1,4 @@
-type QuoteDesign = "amber" | "slate";
+type QuoteDesign = "light" | "dark" | "slate";
 
 interface QuoteOptions {
   body: string;
@@ -18,7 +18,8 @@ export function createQuote(options: QuoteOptions): HTMLElement {
 
   const sectionBaseClass = "py-10 px-12";
   const sectionDefaultClasses: Record<QuoteDesign, string> = {
-    amber: "bg-amber-50",
+    light: "bg-amber-50",
+    dark: "bg-amber-600",
     slate: "bg-slate-600",
   };
 
@@ -31,9 +32,12 @@ export function createQuote(options: QuoteOptions): HTMLElement {
   const terminalBaseClass =
     "rounded-2xl px-3 pt-2 pb-6 flex flex-col gap-6 font-mono";
   const terminalVariantClasses: Record<QuoteDesign, string> = {
-    amber: "bg-slate-900 text-slate-400 bt-2 border-slate-400",
+    light: "bg-slate-900 text-slate-400 bt-2 border-slate-400",
+    dark: "bg-amber-900 text-amber-400 bt-2 border-amber-400",
     slate: "bg-amber-900 text-amber-400 bt-2 border-amber-400",
   };
+
+  const color = variant === "slate" || "light" ? "slate" : "amber";
 
   terminal.className = `${terminalBaseClass} ${terminalVariantClasses[variant]}`;
   terminal.innerHTML = `
@@ -44,7 +48,7 @@ export function createQuote(options: QuoteOptions): HTMLElement {
     </div>
     <div class="self-stretch text-center justify-start leading-6">${body}</div>
     <div class="${action} flex">
-        <a href="mailto:zweigler.cristian@gmail.com" class="block mx-auto px-4 py-3 bg-slate-400 rounded shadow-lg">
+        <a href="mailto:zweigler.cristian@gmail.com" class="block mx-auto px-4 py-3 bg-${color}-400 rounded shadow-lg">
             <span class="text-slate-900">Get in touch</span>
         </a>
     </div>

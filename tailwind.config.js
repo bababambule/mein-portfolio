@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         mono: ["IBM Plex Mono", "monospace"],
       },
+      aspectRatio: {
+        "4/3": "4 / 3",
+        "9/16": "9 / 16",
+      },
       animation: {
         "fade-in": "fadeIn 1.5s ease-in-out 0.3s both",
         "slide-up": "slideUp 0.8s ease-out",

@@ -70,7 +70,7 @@ app.appendChild(aboutBlock);
 const quote = createQuote({
   body: `Want to work with me?<span class="cursorAnim">_</span>`,
   button: true,
-  variant: "amber",
+  variant: "light",
   id: "contact",
 });
 

@@ -22,6 +22,11 @@ export default defineConfig({
             },
           },
         },
+        {
+          entry: "src/about.ts",
+          filename: "about.html",
+          template: "about.html",
+        },
       ],
     }),
   ],
@@ -35,5 +40,8 @@ export default defineConfig({
         iconPack: resolve(__dirname, "icon-pack.html"),
       },
     },
+  },
+  server: {
+    open: "/index.html",
   },
 });
