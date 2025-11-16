@@ -27,6 +27,21 @@ export default defineConfig({
           filename: "about.html",
           template: "about.html",
         },
+        {
+          entry: "src/digital-prospekt.ts",
+          filename: "digital-prospekt.html",
+          template: "digital-prospekt.html",
+        },
+        {
+          entry: "src/bonus-wallet.ts",
+          filename: "bonus-wallet.html",
+          template: "bonus-wallet.html",
+        },
+        {
+          entry: "src/icon-pack.ts",
+          filename: "icon-pack.html",
+          template: "icon-pack.html",
+        },
       ],
     }),
   ],

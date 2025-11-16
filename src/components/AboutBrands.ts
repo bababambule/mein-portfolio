@@ -32,69 +32,25 @@ export function aboutBrandSection(): HTMLElement {
 
   container.appendChild(grid);
 
-  //Porsche
-  grid.appendChild(
-    brandGridElement({
-      img: porsche,
-      alt: "Porsche",
-    })
-  );
+  const brandsArray = [
+    { img: porsche, alt: "Porsche" },
+    { img: moebelRieger, alt: "Möbel Rieger" },
+    { img: saturn, alt: "Saturn" },
+    { img: wwf, alt: "WWF" },
+    { img: bethesda, alt: "Bethesda" },
+    { img: bergeUndMeer, alt: "berge&meer" },
+    { img: xain, alt: "Xain" },
+    { img: ukd, alt: "Universitätsklinikum Düsseldorf" },
+  ];
 
-  //Möbel Rieger
-  grid.appendChild(
-    brandGridElement({
-      img: moebelRieger,
-      alt: "Möbel Rieger",
-    })
-  );
-
-  //Saturn
-  grid.appendChild(
-    brandGridElement({
-      img: saturn,
-      alt: "Saturn",
-    })
-  );
-
-  //WWF
-  grid.appendChild(
-    brandGridElement({
-      img: wwf,
-      alt: "WWF",
-    })
-  );
-
-  //Bethesda
-  grid.appendChild(
-    brandGridElement({
-      img: bethesda,
-      alt: "Bethesda",
-    })
-  );
-
-  //berge&meer
-  grid.appendChild(
-    brandGridElement({
-      img: bergeUndMeer,
-      alt: "Berge&Meer",
-    })
-  );
-
-  //Xain
-  grid.appendChild(
-    brandGridElement({
-      img: xain,
-      alt: "Xain",
-    })
-  );
-
-  //UKD
-  grid.appendChild(
-    brandGridElement({
-      img: ukd,
-      alt: "UKD",
-    })
-  );
+  brandsArray.forEach((brand) => {
+    grid.appendChild(
+      brandGridElement({
+        img: brand.img,
+        alt: brand.alt,
+      })
+    );
+  });
 
   section.appendChild(container);
 
