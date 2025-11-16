@@ -1,11 +1,11 @@
-import { resizeSvg } from "../utils/svg";
-import logoIcon from "../assets/logo_icon.svg?raw";
-import logoName from "../assets/logo_name.svg?raw";
-import gitIcon from "../assets/fa7-brands_square-github.svg?raw";
-import linkedIcon from "../assets/fa7-brands_linkedin.svg?raw";
-import dribbbleIcon from "../assets/fa7-brands_dribbble-square.svg?raw";
+import { resizeSvg } from "../../utils/svg";
+import logoIcon from "../../assets/brand/logo_icon.svg?raw";
+import logoName from "../../assets/brand/logo_name.svg?raw";
+import gitIcon from "../../assets/icons/fa7-brands_square-github.svg?raw";
+import linkedIcon from "../../assets/icons/fa7-brands_linkedin.svg?raw";
+import dribbbleIcon from "../../assets/icons/fa7-brands_dribbble-square.svg?raw";
 
-export function footerElement(): HTMLElement {
+export function PageFooter(): HTMLElement {
   const footer = document.createElement("footer");
   footer.className = "bg-slate-800 py-10 px-12 flex flex-col gap-8";
 

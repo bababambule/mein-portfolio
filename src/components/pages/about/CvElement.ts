@@ -1,4 +1,4 @@
-import { createBadge } from "./Badge";
+import { createBadge } from "../../Badge";
 
 interface ElementOptions {
   company: string;

@@ -1,7 +1,7 @@
-import { CreateHeading } from "./Headline";
+import { CreateHeading } from "../../Headline";
 import { CvElement } from "./CvElement";
 
-export function AboutCvSection(): HTMLElement {
+export function AboutCareer(): HTMLElement {
   const section = document.createElement("section");
   section.className = "bg-amber-50 py-10 px-12";
 

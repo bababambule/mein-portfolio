@@ -1,5 +1,5 @@
 import "./style.css";
-import { createNavigation } from "./components/Navigation.ts";
+import { createNavigation } from "./components/shared/Navigation.ts";
 import { initMobileMenu } from "./utils/mobileMenu.ts";
 import { contentBlock } from "./components/ContentBlock.ts";
 import { imageSection } from "./components/ImageComponent.ts";
@@ -10,7 +10,7 @@ import { BigCardSlider } from "./components/CoreFeatureSection.ts";
 import { createQuote } from "./components/QuoteBlock.ts";
 
 import placeholderPortrait from "./assets/img/placeholder/placeholder-9-16.webp";
-import { footerElement } from "./components/Footer.ts";
+import { footerElement } from "./components/shared/Footer.ts";
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 

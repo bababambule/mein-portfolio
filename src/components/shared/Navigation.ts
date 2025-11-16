@@ -1,5 +1,5 @@
-import logoIcon from "../assets/logo_icon.svg?raw";
-import logoName from "../assets/logo_name.svg?raw";
+import logoIcon from "../../assets/brand/logo_icon.svg?raw";
+import logoName from "../../assets/brand/logo_name.svg?raw";
 
 export interface NavItem {
   label: string;
@@ -48,7 +48,7 @@ function createMobileMenu(): string {
   }).join("");
 }
 
-export function createNavigation(): HTMLElement {
+export function PageNavigation(): HTMLElement {
   const nav = document.createElement("nav");
   nav.className =
     "fixed top-0 left-0 right-0 z-50 bg-amber-50/80 backdrop-blur-md scale-100";

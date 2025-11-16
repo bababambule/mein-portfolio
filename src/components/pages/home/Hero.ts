@@ -1,17 +1,17 @@
-import { createButton } from "./Button";
-import { resizeSvg } from "../utils/svg";
-import gitIcon from "../assets/fa7-brands_square-github.svg?raw";
-import linkedIcon from "../assets/fa7-brands_linkedin.svg?raw";
-import dribbbleIcon from "../assets/fa7-brands_dribbble-square.svg?raw";
-import iconFigma from "../assets/figma.svg?raw";
-import iconHtml from "../assets/html.svg?raw";
-import iconNordcraft from "../assets/nordcraft.svg?raw";
-import iconTailwind from "../assets/tailwind.svg?raw";
-import iconJavascript from "../assets/javascript.svg?raw";
-import iconDirectus from "../assets/directus.svg?raw";
-import heroImg from "../assets/img/cris-zweiger-hero-shot.webp";
+import { createButton } from "../../Button";
+import { resizeSvg } from "../../../utils/svg";
+import gitIcon from "../../../assets/icons/fa7-brands_square-github.svg?raw";
+import linkedIcon from "../../../assets/icons/fa7-brands_linkedin.svg?raw";
+import dribbbleIcon from "../../../assets/icons/fa7-brands_dribbble-square.svg?raw";
+import iconFigma from "../../../assets/icons/figma.svg?raw";
+import iconHtml from "../../../assets/icons/html.svg?raw";
+import iconNordcraft from "../../../assets/icons/nordcraft.svg?raw";
+import iconTailwind from "../../../assets/icons/tailwind.svg?raw";
+import iconJavascript from "../../../assets/icons/javascript.svg?raw";
+import iconDirectus from "../../../assets/icons/directus.svg?raw";
+import heroImg from "../../../assets/img/cris-zweiger-hero-shot.webp";
 
-export function createHero(): HTMLElement {
+export function HomeHero(): HTMLElement {
   const hero = document.createElement("section");
   hero.className =
     "min-h-screen flex items-center justify-center bg-gradient-to-b from-15% from-amber-50 to-amber-600";

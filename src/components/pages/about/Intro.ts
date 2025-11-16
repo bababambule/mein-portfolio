@@ -1,6 +1,6 @@
-import { contentBlock } from "./ContentBlock";
+import { contentBlock } from "../../ContentBlock";
 
-export function aboutIntroSection(): HTMLElement {
+export function AboutIntro(): HTMLElement {
   const section = contentBlock({
     blockVariant: "amberLight",
     showBadge: false,

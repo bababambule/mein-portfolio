@@ -1,17 +1,17 @@
-import { CreateHeading } from "./Headline";
-import { brandGridElement } from "./BrandGridElement";
+import { CreateHeading } from "../../Headline";
+import { brandGridElement } from "../../BrandGridElement";
 
 //Brand Logo Imports
-import porsche from "../assets/img/brands/porsche_2x.webp";
-import moebelRieger from "../assets/img/brands/moebel_rieger_2x.webp";
-import saturn from "../assets/img/brands/saturn_2x.webp";
-import wwf from "../assets/img/brands/wwf_2x.webp";
-import bethesda from "../assets/img/brands/bethesda_2x.webp";
-import bergeUndMeer from "../assets/img/brands/berge_meer_2x.webp";
-import xain from "../assets/img/brands/xain_2x.webp";
-import ukd from "../assets/img/brands/ukd_2x.webp";
+import porsche from "../../../assets/img/brands/porsche_2x.webp";
+import moebelRieger from "../../../assets/img/brands/moebel_rieger_2x.webp";
+import saturn from "../../../assets/img/brands/saturn_2x.webp";
+import wwf from "../../../assets/img/brands/wwf_2x.webp";
+import bethesda from "../../../assets/img/brands/bethesda_2x.webp";
+import bergeUndMeer from "../../../assets/img/brands/berge_meer_2x.webp";
+import xain from "../../../assets/img/brands/xain_2x.webp";
+import ukd from "../../../assets/img/brands/ukd_2x.webp";
 
-export function aboutBrandSection(): HTMLElement {
+export function AboutBrands(): HTMLElement {
   const section = document.createElement("section");
   section.className = "bg-amber-50 px-12 py-10";
 

@@ -1,6 +1,6 @@
-import digitalProspekt from "../assets/img/card-digital-prospekt.webp";
+import digitalProspekt from "../../../assets/img/card-digital-prospekt.webp";
 
-export function ProjectCardSection(): HTMLElement {
+export function HomeProjects(): HTMLElement {
   const projectCardSection = document.createElement("section");
   projectCardSection.setAttribute("id", "projects");
   projectCardSection.className =
