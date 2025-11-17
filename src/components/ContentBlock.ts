@@ -31,19 +31,23 @@ export function contentBlock(options: ContentBlockOptions): HTMLElement {
     body = "",
   } = options;
 
-  //create the ContentBlock
   const contentBlock = document.createElement("section");
-  //set the base classes
+
+  // Setting the base classes for the content section
   const baseClasses = "w-full px-12";
-  //variations based on the blockVariant
+
+  // Setting the variant classes for the content section
   const variantClasses = {
-    amberLight: "bg-amber-50 text-amber-800",
+    amberLight: "bg-amber-50 text-slate-800",
     amberDark: "bg-amber-600 text-amber-50",
     slateLight: "bg-slate-50 text-slate-800",
     slateDark: "bg-slate-600 text-slate-50",
   };
-  //set the styling
+
   contentBlock.className = `${baseClasses} ${variantClasses[blockVariant]} flex flex-col gap-4 py-12`;
+
+  const container = document.createElement("div");
+  container.className = "max-w-6xl mx-auto";
 
   //create the badge element
   const badge = createBadge({
@@ -70,9 +74,11 @@ export function contentBlock(options: ContentBlockOptions): HTMLElement {
   if (showBadge) {
     headingBlock.appendChild(badge);
   }
+
   headingBlock.appendChild(heading);
-  contentBlock.appendChild(headingBlock);
-  contentBlock.appendChild(bodyBlock);
+  container.appendChild(headingBlock);
+  container.appendChild(bodyBlock);
+  contentBlock.appendChild(container);
 
   return contentBlock;
 }
