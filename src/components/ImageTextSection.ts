@@ -11,7 +11,7 @@ type SectionVariant =
 interface SectionOptions {
   variant?: SectionVariant;
   title: string;
-  body: string;
+  body: string | HTMLElement;
   src: string;
   alt?: string;
   color?: FrontColor;
@@ -20,7 +20,6 @@ interface SectionOptions {
 export function imageContentBlock(options: SectionOptions): HTMLElement {
   const {
     title = "My Heading",
-    body = "My Body",
     src = "./assets/img/placeholder/placeholder-square.webp",
     alt = "Alt Text",
     color = "amber",
@@ -52,7 +51,7 @@ export function imageContentBlock(options: SectionOptions): HTMLElement {
   imageBlock.className = `rounded-lg bg-${bgColor}-600 p-6 flex items-center justify-center`;
   imageBlock.innerHTML = `
         <div>
-            <img src="${src}" alt="${alt}" class="aspect-square object-cover w-full">
+            <img src="${src}" alt="${alt}" class="aspect-square object-cover w-full rounded-lg">
         </div>
   `;
 
@@ -70,7 +69,12 @@ export function imageContentBlock(options: SectionOptions): HTMLElement {
   textBlock.appendChild(heading);
 
   const contentBody = document.createElement("div");
-  contentBody.innerHTML = body;
+  const { body } = options;
+  if (body instanceof HTMLElement) {
+    contentBody.appendChild(body);
+  } else {
+    contentBody.innerHTML = body;
+  }
 
   textBlock.appendChild(contentBody);
 

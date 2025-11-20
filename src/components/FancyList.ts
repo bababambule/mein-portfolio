@@ -54,7 +54,7 @@ export function FancyList(options: FancyListOptions): HTMLElement {
     const img = document.createElement("img");
     img.src = item.src;
     img.alt = item.title;
-    img.className = "aspect-square size-12 bg-white rounded-sm";
+    img.className = "aspect-square size-12 rounded-sm";
 
     //Text Container
     const textContainer = document.createElement("div");

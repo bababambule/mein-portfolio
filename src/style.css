@@ -16,3 +16,29 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer components {
+  .timeline-badge-line {
+    @apply relative inline-block;
+  }
+  .timeline-badge-line-pre {
+    @apply relative inline-block;
+  }
+
+  .timeline-badge-line::after {
+    content: "";
+    @apply absolute top-1/2 left-full;
+    transform: translateY(-50%);
+    @apply h-0.5 bg-current w-svw;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  .timeline-badge-line-pre::before {
+    content: "";
+    @apply absolute top-1/2 right-full;
+    transform: translateY(-50%);
+    @apply h-0.5 bg-current w-svw;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}

@@ -11,7 +11,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/index.html" },
   { label: "Case Studies", href: "/index.html#projects" },
   { label: "About", href: "/about.html" },
-  { label: "Kontakt", href: "/index.html#contact", variant: "primary" },
+  { label: "Contact", href: "/index.html#contact", variant: "primary" },
 ];
 
 function createDesktopMenu(): string {
@@ -24,7 +24,7 @@ function createDesktopMenu(): string {
       `;
     }
     return `
-      <a href="" class="text-slate-600 hover:text-slate-700 transition-colors">
+      <a href="${item.href}" class="text-slate-600 hover:text-slate-700 transition-colors">
         ${item.label}
       </a>
     `;

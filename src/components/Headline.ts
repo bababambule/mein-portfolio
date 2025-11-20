@@ -18,7 +18,7 @@ export function CreateHeading(options: HeadingOptions): HTMLElement {
     h3: "text-lg font-bold",
     h4: "text-base font-bold",
   };
-  heading.textContent = text;
+  heading.innerHTML = text;
   heading.className = className || defaultClasses[type];
 
   return heading;

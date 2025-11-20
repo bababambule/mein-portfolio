@@ -1,5 +1,6 @@
 import { createBadge, type BadgeVariant } from "./Badge";
 import { CreateHeading, type HeadingTypes } from "./Headline";
+// import { brandGridElement } from "./BrandGridElement";
 
 // Declare different Styles for the ContentBlock
 type ContentBlockVariant =
@@ -16,27 +17,24 @@ interface ContentBlockOptions {
   showBadge?: boolean;
   headingText: string;
   headingType?: HeadingTypes;
-  body?: string;
+  body?: string | HTMLElement;
 }
 
 export function contentBlock(options: ContentBlockOptions): HTMLElement {
   //Set ContentBlock default Options
   const {
     blockVariant = "amberDark",
-    badgeText = "",
-    badgeVariant = "amberLight",
-    showBadge = true,
-    headingText = "Headline",
+    badgeText,
+    badgeVariant,
+    showBadge = false,
+    headingText,
     headingType = "h1",
-    body = "",
+    body,
   } = options;
 
   const contentBlock = document.createElement("section");
 
-  // Setting the base classes for the content section
   const baseClasses = "w-full px-12";
-
-  // Setting the variant classes for the content section
   const variantClasses = {
     amberLight: "bg-amber-50 text-slate-800",
     amberDark: "bg-amber-600 text-amber-50",
@@ -44,40 +42,43 @@ export function contentBlock(options: ContentBlockOptions): HTMLElement {
     slateDark: "bg-slate-600 text-slate-50",
   };
 
-  contentBlock.className = `${baseClasses} ${variantClasses[blockVariant]} flex flex-col gap-4 py-12`;
+  contentBlock.className = `${baseClasses} ${variantClasses[blockVariant]} py-12`;
 
   const container = document.createElement("div");
-  container.className = "max-w-6xl mx-auto";
+  container.className = "max-w-prose mx-auto w-full flex flex-col gap-6";
 
-  //create the badge element
-  const badge = createBadge({
-    text: badgeText, //text to be use
-    variant: badgeVariant, //variant to be used
-  });
+  const headingBlock = document.createElement("div");
+  headingBlock.className = "flex flex-col gap-2 w-full";
 
-  //create the heading element
+  if (showBadge && badgeText) {
+    const badge = createBadge({
+      text: badgeText, //text to be use
+      variant: badgeVariant, //variant to be used
+    });
+    headingBlock.appendChild(badge);
+  }
+
   const heading = CreateHeading({
     text: headingText,
     type: headingType,
   });
 
-  /*Design part starts here*/
-  const headingBlock = document.createElement("div");
-  headingBlock.className = "flex flex-col gap-2";
-
-  //Create body element
-  const bodyBlock = document.createElement("div");
-  bodyBlock.className = "";
-  bodyBlock.innerHTML = body;
-
-  //show badge only set to true
-  if (showBadge) {
-    headingBlock.appendChild(badge);
-  }
-
   headingBlock.appendChild(heading);
   container.appendChild(headingBlock);
-  container.appendChild(bodyBlock);
+
+  if (body) {
+    const bodyBlock = document.createElement("div");
+    bodyBlock.className = "flex flex-col gap-6";
+
+    if (typeof body === "string") {
+      bodyBlock.innerHTML = body;
+    } else {
+      bodyBlock.appendChild(body);
+    }
+
+    container.appendChild(bodyBlock);
+  }
+
   contentBlock.appendChild(container);
 
   return contentBlock;

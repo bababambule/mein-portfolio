@@ -1,14 +1,16 @@
-import { imageSection } from "../../ImageComponent";
+// import { imageSection } from "../../ImageComponent";
 import { contentBlock } from "../../ContentBlock";
-import placeholder from "../../../assets/img/placeholder/placeholder-9-16.webp";
+// import placeholder from "../../../assets/img/placeholder/placeholder-9-16.webp";
+// import placeholderLarge from "../../../assets/img/placeholder/placeholder-16-9.webp";
 
 export function CaseIconApproach(): HTMLElement {
-  const iconImageBlock = imageSection({
+  /*const iconImageBlock = imageSection({
     variant: "slateToLight",
     src: placeholder,
+    srcLarge: placeholderLarge,
     alt: "Drafting the icons per hand",
     ratio: "Portrait",
-  });
+  });*/
 
   const bodyContent = `
     <div class="flex flex-col gap-6 mt-4 lg:block lg:columns-2">
@@ -40,7 +42,7 @@ export function CaseIconApproach(): HTMLElement {
 
   const approachContent = document.createElement("div");
 
-  approachContent.appendChild(iconImageBlock);
+  //approachContent.appendChild(iconImageBlock);
   approachContent.appendChild(iconContentBlock);
 
   return approachContent;

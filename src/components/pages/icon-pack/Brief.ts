@@ -2,7 +2,7 @@ import { contentBlock } from "../../ContentBlock";
 
 export function CaseIconBrief(): HTMLElement {
   const iconBrief = document.createElement("section");
-  iconIntro.className = "px-12";
+  iconBrief.className = "px-12";
 
   const container = document.createElement("container");
   container.className = "max-w-7xl mx-auto";

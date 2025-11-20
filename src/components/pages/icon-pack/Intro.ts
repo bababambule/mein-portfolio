@@ -2,7 +2,7 @@ import { contentBlock } from "../../ContentBlock";
 
 export function CaseIconIntro(): HTMLElement {
   const textBlock = `
-    <p class="text-xl font-light text-amber-800">Custom iconography for mid-century modern e-commerce</p>
+    <p class="text-xl font-light ">Custom iconography for mid-century modern e-commerce</p>
   `;
 
   const iconIntro = contentBlock({

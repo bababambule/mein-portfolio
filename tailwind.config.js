@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         mono: ["IBM Plex Mono", "monospace"],
       },
+      maxWidth: {
+        "3ch": "3ch",
+        "4ch": "4ch",
+      },
       aspectRatio: {
         "4/3": "4 / 3",
         "9/16": "9 / 16",
