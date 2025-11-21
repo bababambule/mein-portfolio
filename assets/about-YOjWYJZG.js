@@ -1,4 +1,4 @@
-import{c as p,C as l,b as g,P as b,a as m,i as B}from"./mobileMenu-ByhhJ6-M.js";import{c as h}from"./QuoteBlock-BITm75rO.js";function u(){const A=p({blockVariant:"amberLight",showBadge:!1,headingText:"Designer who codes. Developer who designs",headingType:"h1",body:`
+import{c as p,C as l,b as g,P as b,a as m,i as B}from"./mobileMenu-BetVJ76o.js";import{c as h}from"./QuoteBlock-BITm75rO.js";function u(){const A=p({blockVariant:"amberLight",showBadge:!1,headingText:"Designer who codes. Developer who designs",headingType:"h1",body:`
         <p class="text-xl/9 font-light text-slate-800">I build digital products that ship – from first sketch to production deploy. Design and development aren't separate phases for me. They're one continuous process, and that's how great products get built.</p>
         <div class="bg-slate-400 aspect-9/16 w-full mt-14 rounded-lg"></div>
     `});return A.classList.add("mt-20"),A}function v(A){const{img:e,alt:o="Brands that trust me"}=A,t=document.createElement("div");return t.className="border border-amber-600/20 flex justify-center items-center",t.innerHTML=`
